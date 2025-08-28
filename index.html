@@ -19,12 +19,11 @@
         </nav>
         <div class="flex gap-2 ">
             <div class="flex justify-center items-center bg-sky-100 rounded-3xl p-2 w-[123px]">
-                <p class="font-bold text-xl mr-3">0</p>
+                <p id="heartCounter" class="font-bold text-xl mr-3 ">0</p>
                 <img class="h-[30px] w-[30px]" src="images/heart.png" alt="">
             </div>
             <div class="flex justify-center items-center bg-sky-100 rounded-3xl p-2 w-[123px]">
-                <p class="font-bold text-xl mr-3">100
-                </p>
+               <span id="coinCount" class="font-bold text-xl mr-3 ">100</span>
                 <img class="h-[30px] w-[30px]" src="images/coin.png" alt="">
             </div class="flex justify-center items-center">
 
@@ -50,57 +49,57 @@
     <section class=" mt-5 mx-7">
 
         <div class="grid grid-cols-4 gap-6">
-            <div class="rounded-2xl shadow-lg mt-2 p-4 bg-white
+            <div class="rounded-2xl shadow-lg mt-2 p-4 bg-white card
             ">
                 <div class="flex justify-between items-center">
                     <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/emergency.png" alt="">
-                    <img id="getHeart" src="images/Vector.png" alt="">
+                    <img id="" class="heartBtn cursor-pointer" src="images/Vector.png" alt="">
                 </div>
 
-                <h3 class="text-lg mt-2 font-bold">National Emergency Number</h3>
+                <h3 class="text-lg mt-2 font-bold serviceTitle">National Emergency Number</h3>
                 <h4>National Emergency</h4>
-                <p class="mt-3 text-2xl font-bold">999</p>
+                <p class="mt-3 text-2xl font-bold serviceNumber">999</p>
                 <h3 class="mt-1 bg-gray-200 w-8 rounded-lg text-center mb-3">All</h3>
 
                 <div class="flex justify-between gap-2">
                     <button class="btn w-1/2"><img src="images/Group.png" alt=""> Copy</button>
-                    <button class="btn    bg-green-700  text-white w-1/2"><img src="images/Vector (1).png"
+                    <button class="btn    bg-green-700  text-white w-1/2 callBtn"><img src="images/Vector (1).png"
                             alt="">Call</button>
                 </div>
 
             </div>
-            <div class="rounded-2xl shadow-lg mt-2 p-4 bg-white">
+            <div class="rounded-2xl shadow-lg mt-2 p-4 bg-white card">
                 <div class="flex justify-between items-center">
-                    <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/emergency.png" alt="">
-                    <img src="images/Vector.png" alt="">
+                    <img class="h-10 w-10 bg-sky-200 rounded-lg p-1" src="images/police.png" alt="">
+                    <img class="heartBtn cursor-pointer" src="images/Vector.png" alt="">
                 </div>
 
-                <h3 class="text-lg mt-2 font-bold">National Emergency Number</h3>
-                <h4>National Emergency</h4>
-                <p class="mt-3 text-2xl font-bold">999</p>
-                <h3 class="mt-1 bg-gray-200 w-8 rounded-lg text-center mb-3">All</h3>
+                <h3 class="text-lg mt-2 font-bold serviceTitle">Police Helpline Number</h3>
+                <h4>Police</h4>
+                <p class="mt-3 text-2xl font-bold serviceNumber">999</p>
+                <h3 class="mt-1 bg-gray-200 w-12 rounded-lg text-center mb-3">Police</h3>
 
                 <div class="flex justify-between gap-2">
                     <button class="btn w-1/2"><img src="images/Group.png" alt=""> Copy</button>
-                    <button class="btn    bg-green-700  text-white w-1/2"><img src="images/Vector (1).png"
+                    <button class="btn    bg-green-700  text-white w-1/2 callBtn"><img src="images/Vector (1).png"
                             alt="">Call</button>
                 </div>
 
             </div>
-            <div class="rounded-2xl shadow-lg mt-2 p-4 bg-white">
+            <div class="rounded-2xl shadow-lg mt-2 p-4 bg-white card">
                 <div class="flex justify-between items-center">
-                    <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/emergency.png" alt="">
-                    <img src="images/Vector.png" alt="">
+                    <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/fire-service.png" alt="">
+                    <img class="heartBtn cursor-pointer" src="images/Vector.png" alt="">
                 </div>
 
-                <h3 class="text-lg mt-2 font-bold">National Emergency Number</h3>
-                <h4>National Emergency</h4>
-                <p class="mt-3 text-2xl font-bold">999</p>
-                <h3 class="mt-1 bg-gray-200 w-8 rounded-lg text-center mb-3">All</h3>
+                <h3 class="text-lg mt-2 font-bold serviceTitle">Fire Service Number</h3>
+                <h4>Fire Service</h4>
+                <p class="mt-3 text-2xl font-bold serviceNumber">999</p>
+                <h3 class="mt-1 bg-gray-200 w-8 rounded-lg text-center mb-3">Fire</h3>
 
                 <div class="flex justify-between gap-2">
                     <button class="btn w-1/2"><img src="images/Group.png" alt=""> Copy</button>
-                    <button class="btn    bg-green-700  text-white w-1/2"><img src="images/Vector (1).png"
+                    <button class="btn    bg-green-700  text-white w-1/2 callBtn"><img src="images/Vector (1).png"
                             alt="">Call</button>
                 </div>
 
@@ -115,115 +114,115 @@
                 <img class="mr-2" src="images/callhistory.png" alt="">
                 <h3 class="font-semibold text-xl">Call History</h3>
             </div>
-            <button class="bg-green-700 rounded-3xl p-2 w-[123px] text-white font-semibold text-xl ">Clear</button>
+            <button class="bg-green-700 rounded-3xl p-2 w-[123px] text-white font-semibold text-xl cursor-pointer ">Clear</button>
         </div>
  </div>
 
 
-            <div class="rounded-2xl shadow-lg  p-4 bg-white">
+            <div class="rounded-2xl shadow-lg  p-4 bg-white card">
                 <div class="flex justify-between items-center">
-                    <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/emergency.png" alt="">
-                    <img src="images/Vector.png" alt="">
+                    <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/ambulance.png" alt="">
+                    <img class="heartBtn cursor-pointer" src="images/Vector.png" alt="">
                 </div>
 
-                <h3 class="text-lg mt-2 font-bold">National Emergency Number</h3>
-                <h4>National Emergency</h4>
-                <p class="mt-3 text-2xl font-bold">999</p>
-                <h3 class="mt-1 bg-gray-200 w-8 rounded-lg text-center mb-3">All</h3>
+                <h3 class="text-lg mt-2 font-bold serviceTitle">Ambulance Service</h3>
+                <h4>Ambulance</h4>
+                <p class="mt-3 text-2xl font-bold serviceNumber">1994-999999</p>
+                <h3 class="mt-1 bg-gray-200 w-12 rounded-lg text-center mb-3">Health</h3>
 
                 <div class="flex justify-between gap-2">
                     <button class="btn w-1/2"><img src="images/Group.png" alt=""> Copy</button>
-                    <button class="btn    bg-green-700  text-white w-1/2"><img src="images/Vector (1).png"
+                    <button class="btn    bg-green-700  text-white w-1/2 callBtn"><img src="images/Vector (1).png"
                             alt="">Call</button>
                 </div>
 
             </div>
-            <div class="rounded-2xl shadow-lg p-4  bg-white">
+            <div class="rounded-2xl shadow-lg p-4  bg-white card">
                 <div class="flex justify-between items-center">
                     <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/emergency.png" alt="">
-                    <img src="images/Vector.png" alt="">
+                    <img class="heartBtn cursor-pointer" src="images/Vector.png" alt="">
                 </div>
 
-                <h3 class="text-lg mt-2 font-bold">National Emergency Number</h3>
-                <h4>National Emergency</h4>
-                <p class="mt-3 text-2xl font-bold">999</p>
-                <h3 class="mt-1 bg-gray-200 w-8 rounded-lg text-center mb-3">All</h3>
+                <h3 class="text-lg mt-2 font-bold serviceTitle">Women & Child Helpline</h3>
+                <h4>Women & Child Helpline</h4>
+                <p class="mt-3 text-2xl font-bold serviceNumber">109</p>
+                <h3 class="mt-1 bg-gray-200 w-8 rounded-lg text-center mb-3">Help</h3>
 
                 <div class="flex justify-between gap-2">
                     <button class="btn w-1/2"><img src="images/Group.png" alt=""> Copy</button>
-                    <button class="btn    bg-green-700  text-white w-1/2"><img src="images/Vector (1).png"
+                    <button class="btn    bg-green-700  text-white w-1/2 callBtn"><img src="images/Vector (1).png"
                             alt="">Call</button>
                 </div>
 
             </div>
-            <div class="rounded-2xl shadow-lg p-4 bg-white">
+            <div class="rounded-2xl shadow-lg p-4 bg-white card">
                 <div class="flex justify-between items-center">
                     <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/emergency.png" alt="">
-                    <img src="images/Vector.png" alt="">
+                    <img class="heartBtn cursor-pointer" src="images/Vector.png" alt="">
                 </div>
 
-                <h3 class="text-lg mt-2 font-bold">National Emergency Number</h3>
-                <h4>National Emergency</h4>
-                <p class="mt-3 text-2xl font-bold">999</p>
-                <h3 class="mt-1 bg-gray-200 w-8 rounded-lg text-center mb-3">All</h3>
+                <h3 class="text-lg mt-2 font-bold serviceTitle">Anti-Corruption Helpline</h3>
+                <h4>Anti-Corruption</h4>
+                <p class="mt-3 text-2xl font-bold serviceNumber">106</p>
+                <h3 class="mt-1 bg-gray-200 w-9 rounded-lg text-center mb-3">Govt.</h3>
 
                 <div class="flex justify-between gap-2">
                     <button class="btn w-1/2"><img src="images/Group.png" alt=""> Copy</button>
-                    <button class="btn    bg-green-700  text-white w-1/2"><img src="images/Vector (1).png"
+                    <button class="btn    bg-green-700  text-white w-1/2 callBtn"><img src="images/Vector (1).png"
                             alt="">Call</button>
                 </div>
 
             </div>
-            <div class="rounded-2xl shadow-lg p-4 bg-white">
+            <div class="rounded-2xl shadow-lg p-4 bg-white card">
                 <div class="flex justify-between items-center">
                     <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/emergency.png" alt="">
-                    <img src="images/Vector.png" alt="">
+                    <img class="heartBtn cursor-pointer" src="images/Vector.png" alt="">
                 </div>
 
-                <h3 class="text-lg mt-2 font-bold">National Emergency Number</h3>
-                <h4>National Emergency</h4>
-                <p class="mt-3 text-2xl font-bold">999</p>
-                <h3 class="mt-1 bg-gray-200 w-8 rounded-lg text-center mb-3">All</h3>
+                <h3 class="text-lg mt-2 font-bold serviceTitle">Electricity Helpline</h3>
+                <h4>Electricity Outage</h4>
+                <p class="mt-3 text-2xl font-bold serviceNumber">16216</p>
+                <h3 class="mt-1 bg-gray-200 w-18 rounded-lg text-center mb-3">Electricity</h3>
 
                 <div class="flex justify-between gap-2">
                     <button class="btn w-1/2"><img src="images/Group.png" alt=""> Copy</button>
-                    <button class="btn    bg-green-700  text-white w-1/2"><img src="images/Vector (1).png"
+                    <button class="btn    bg-green-700  text-white w-1/2 callBtn"><img src="images/Vector (1).png"
                             alt="">Call</button>
                 </div>
 
             </div>
-            <div class="rounded-2xl shadow-lg p-4 bg-white">
+            <div class="rounded-2xl shadow-lg p-4 bg-white card">
                 <div class="flex justify-between items-center">
-                    <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/emergency.png" alt="">
-                    <img src="images/Vector.png" alt="">
+                    <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/brac.png" alt="">
+                    <img class="heartBtn cursor-pointer" src="images/Vector.png" alt="">
                 </div>
 
-                <h3 class="text-lg mt-2 font-bold">National Emergency Number</h3>
-                <h4>National Emergency</h4>
-                <p class="mt-3 text-2xl font-bold">999</p>
-                <h3 class="mt-1 bg-gray-200 w-8 rounded-lg text-center mb-3">All</h3>
+                <h3 class="text-lg mt-2 font-bold serviceTitle">Brac Helpline</h3>
+                <h4>Brac</h4>
+                <p class="mt-3 text-2xl font-bold serviceNumber">16445</p>
+                <h3 class="mt-1 bg-gray-200 w-10 rounded-lg text-center mb-3">NGO</h3>
 
                 <div class="flex justify-between gap-2">
                     <button class="btn w-1/2"><img src="images/Group.png" alt=""> Copy</button>
-                    <button class="btn    bg-green-700  text-white w-1/2"><img src="images/Vector (1).png"
+                    <button class="btn    bg-green-700  text-white w-1/2 callBtn"><img src="images/Vector (1).png"
                             alt="">Call</button>
                 </div>
 
             </div>
-            <div class=" p-4 bg-white rounded-2xl shadow-lg">
+            <div class=" p-4 bg-white rounded-2xl shadow-lg card">
                 <div class="flex justify-between items-center">
-                    <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/emergency.png" alt="">
-                    <img src="images/Vector.png" alt="">
+                    <img class="h-10 w-10 bg-pink-200 rounded-lg p-1" src="images/Bangladesh-Railway.png" alt="">
+                    <img class="heartBtn cursor-pointer" src="images/Vector.png" alt="">
                 </div>
 
-                <h3 class="text-lg mt-2 font-bold">National Emergency Number</h3>
-                <h4>National Emergency</h4>
-                <p class="mt-3 text-2xl font-bold">999</p>
-                <h3 class="mt-1 bg-gray-200 w-8 rounded-lg text-center mb-3">All</h3>
+                <h3 class="text-lg mt-2 font-bold serviceTitle">Bangladesh Railway Helpline </h3>
+                <h4>Bangladesh Railway</h4>
+                <p class="mt-3 text-2xl font-bold serviceNumber">163</p>
+                <h3 class="mt-1 bg-gray-200 w-12 rounded-lg text-center mb-3">Travel</h3>
 
                 <div class="flex justify-between gap-2">
                     <button class="btn w-1/2"><img src="images/Group.png" alt=""> Copy</button>
-                    <button class="btn    bg-green-700  text-white w-1/2"><img src="images/Vector (1).png"
+                    <button class="btn    bg-green-700  text-white w-1/2 callBtn"><img src="images/Vector (1).png"
                             alt="">Call</button>
                 </div>
 
@@ -234,6 +233,8 @@
        
 
     </section>
+
+     
 
 <script src="script.js"></script>
 </body>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Call Button Example</title>
+  <style>
+    .card {
+      border: 1px solid #888;
+      padding: 16px;
+      margin: 10px;
+      display: inline-block;
+      text-align: center;
+      width: 180px;
+      border-radius: 8px;
+    }
+    nav {
+      padding: 12px;
+      background: #f2f2f2;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    🪙 Coins: <span id="coinCount">100</span>
+  </nav>
+
+  <!-- Card 1 -->
+  <div class="card">
+    <h3 class="serviceName">Fire Service</h3>
+    <p class="serviceNumber">199</p>
+    <button class="callBtn">📞 Call</button>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <h3 class="serviceName">Ambulance</h3>
+    <p class="serviceNumber">999</p>
+    <button class="callBtn">📞 Call</button>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <h3 class="serviceName">Police</h3>
+    <p class="serviceNumber">100</p>
+    <button class="callBtn">📞 Call</button>
+  </div>
+
+  <script>
+   // initial coins
+    let coins = 100;
+    const coinDisplay = document.getElementById("coinCount");
+
+    // get all call buttons (HTMLCollection)
+    const buttons = document.getElementsByClassName("callBtn");
+
+    // use for...of loop
+    for (const button of buttons) {
+      button.addEventListener("click", function() {
+        // get the card of this button
+        const card = this.closest(".card");
+        const serviceName = card.getElementsByClassName("serviceName")[0].textContent;
+        const serviceNumber = card.getElementsByClassName("serviceNumber")[0].textContent;
+
+        // check coins
+        if (coins < 20) {
+          alert("Not enough coins to make a call!");
+          return; // stop function
+        }
+
+        // deduct 20 coins
+        coins -= 20;
+        coinDisplay.textContent = coins;
+
+        // show alert
+        alert("📞Calling " + serviceName + " at " + serviceNumber);
+      });
+    }
+  </script>
+</body>
+</html>
